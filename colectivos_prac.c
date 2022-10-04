@@ -3,11 +3,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void carvectores(int num_p,int *pun_num,char codi_p,char *pun_cod,int j);
-void informe(int *pum_num,char *pun_cod,int i);
+	void carvectores(int num_p,int *pun_num,char codi_p,char *pun_cod,int j);
+	void informe(int *pum_num,char *pun_cod,int i);
 
 
-int main() {
+	int main() {
 	int op=0,num_p=0,pun_num[50]={0},i=0;
 	char codi_p,pun_cod[50]={' '};
 	
