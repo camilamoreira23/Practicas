@@ -1,3 +1,47 @@
+/*/El Ministerio de Transporte de un municipio desea evaluar una línea de colectivos que
+recorre algunos de los barrios de su ciudad.
+Esta línea de colectivos tiene paradas prefijadas en los distintos barrios de la misma.
+Las paradas de colectivos están codificadas con un número entero de 1 a 10 y los barrios
+están codificados con un carácter: ‘c’ Caballito, ‘f’ Flores, ‘p’ Palermo y ‘l’ Liniers.
+Se conoce también en qué barrio está cada parada de colectivos:
+ Parada Barrio
+de 1 a 3 ‘l’ Liniers
+de 4 a 5 ‘f’ Flores
+de 6 a 7 ‘c’ Caballito
+de 8 a 10 ‘p’ Palermo
+Se desea desarrollar una aplicación en la cual se puedan registrar los datos del recorrido
+de la línea de colectivos, para luego evaluar si cubre las necesidades de transporte
+público de esos barrios.
+Se conocen las paradas de colectivos correspondientes a su recorrido, y de cada parada
+de colectivos se conoce el número de la misma:
+Número de parada de colectivo (valor entero de 1 a 10).
+La aplicación deberá tener las siguientes opciones:
+Opción 1 – Ingresar datos de paradas de la línea de colectivos:
+En esta opción, se deberá ingresar por teclado el número de una parada de colectivos.
+Deberá encontrar el código de barrio al que pertenece el número de parada ingresado.
+Luego, deberá llamar a una función que tenga al menos como parámetros el número de
+parada y el código de barrio y 2 vectores, y guarde esos datos en los 2 vectores
+respectivamente.
+En esta opción se irán cargando de a una por vez y en orden las paradas de la línea de
+colectivo.
+Opción 2 – Consultas de la información sobre la línea de colectivos:
+En esta opción, se deberá llamar a una función que tenga como parámetros al menos los
+2 vectores cargados en la opción 1, y los utilice para informar los datos de cada parada y
+lo siguiente:
+a) Indicar la cantidad de paradas por barrio que tiene la línea de colectivos, y un
+cartel que indique si todas las paradas de la línea son del mismo barrio o no.
+b) Indicar con un cartel si la línea de colectivos comienza y finaliza su recorrido
+en el mismo barrio, considerando que la cabecera y la terminal son
+respectivamente la primera y última parada del recorrido en el orden que han
+sido ingresadas. Si el resultado es sí, indicar además ese código de barrio.
+Ejercicio para practicar
+Opción 3 – Salir
+Diseñar un algoritmo en lenguaje C. Considerar que los datos ingresados son válidos.
+Usar aritmética de punteros en las funciones de opciones 1 y 2, para el manejo de
+vectores./*/
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -80,7 +124,7 @@ cant++;
 	cantp=cantp+1;
 	break;	
 	}	
-	 // guardo el barrio de la primera y �ltima parada
+	 // guardo el barrio de la primera y última parada
 			 if (j==0) { barrioparadai=*(pun_cod+j);
 			 }
 			 
